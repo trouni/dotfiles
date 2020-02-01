@@ -10,5 +10,6 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias dotfiles='cd $CODE/dotfiles'
 
 # Git shortcuts
+alias gcm='git commit -m'
 alias gcom='git checkout origin master'
 alias gs='git status'
