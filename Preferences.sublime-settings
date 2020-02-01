@@ -18,7 +18,10 @@
 		"node_modules",
 		"dist",
 		"public/packs",
-		"coverage"
+		"coverage",
+		".ipynb_checkpoints",
+    	".pytest_cache",
+    	"__pycache__"
 	],
 	"font_size": 16,
 	"highlight_modified_tabs": true,
