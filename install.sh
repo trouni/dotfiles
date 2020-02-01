@@ -2,7 +2,7 @@ backup() {
   target=$1
   if [ -e "$target" ]; then           # Does the config file already exist?
     if [ ! -L "$target" ]; then       # as a pure file?
-      mv "$target" "$target.backup"   # Then backup it
+      mv "$target" "$target.backup"   # Then back it up
       echo "-----> Moved your old $target config file to $target.backup"
     fi
   fi
@@ -59,6 +59,7 @@ curl -k https://sublime.wbond.net/Package%20Control.sublime-package > $SUBL_PATH
 ln -s $PWD/Preferences.sublime-settings $SUBL_PATH/Packages/User/Preferences.sublime-settings
 ln -s $PWD/Package\ Control.sublime-settings $SUBL_PATH/Packages/User/Package\ Control.sublime-settings
 
+zsh custom_config.sh
 zsh ~/.zshrc
 
 echo "👌  Carry on with git setup!"
