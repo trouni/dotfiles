@@ -6,10 +6,15 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
-# Dotfiles folder
+# Folders
+alias gists='cd $CODE && clear'
+alias gist='gists'
 alias dotfiles='cd $CODE/dotfiles'
 
 # Git shortcuts
 alias gcm='git commit -m'
 alias gcom='git checkout origin master'
 alias gs='git status'
+
+# Python3
+alias python='python3'

@@ -1,3 +1,7 @@
+# Default code folder
+CODE=$HOME/Dropbox/Code
+
+# ZSH folder
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
@@ -43,7 +47,4 @@ pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-export BUNDLER_EDITOR="code -a"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="code -a"
