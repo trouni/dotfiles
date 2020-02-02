@@ -1,0 +1,29 @@
+{
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "window.zoomLevel": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "git.autofetch": true,
+  "workbench.iconTheme": "vscode-icons",
+  "cSpell.userWords": ["overscroll"],
+  // Files
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  // Formatting
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "beautify.language": {
+    "html": ["html", "php", "erb"],
+    "css": [],
+    "js": []
+  },
+  // Git
+  "git.suggestSmartCommit": false,
+  // Git Project Manager Settings
+  "gitProjectManager.baseProjectsFolders": ["/Users/trouni/code/trouni/"],
+  "gitProjectManager.storeRepositoriesBetweenSessions": true
+}

@@ -10,6 +10,13 @@ ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="af-magic"
 
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to automatically update without prompting.
+DISABLE_UPDATE_PROMPT="true"
+
 # ZSH plugins
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
 
@@ -48,3 +55,10 @@ pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="code -a"
+
+# Prompt
+export PROMPT='$FG[237]${(l.COLUMNS..-.)}%{$reset_color%}
+$FG[032]%1~\
+$(git_prompt_info)$(hg_prompt_info) \
+$FG[105]%(!.#.»)%{$reset_color%} '
+export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
