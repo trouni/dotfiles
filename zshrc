@@ -18,6 +18,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_UPDATE_PROMPT="true"
 
 # ZSH plugins
+# Unused: zsh-autosuggestions
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
@@ -48,7 +49,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 
-# Store your own aliases in the ~/.aliases file and load the here.
+# Store your own aliases in the ~/.aliases file and load them here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Encoding stuff for the terminal

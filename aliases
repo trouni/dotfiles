@@ -15,7 +15,7 @@ alias lectures='cd $CODE/teaching/le-wagon/lectures'
 
 # Git shortcuts
 alias gcm='git commit -m'
-alias gcom='git checkout origin master'
+alias gcom='git checkout master'
 alias gcob='git checkout -b'
 alias gs='git status'
 

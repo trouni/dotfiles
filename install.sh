@@ -3,7 +3,7 @@ backup() {
   if [ -e "$target" ]; then           # Does the config file already exist?
     if [ ! -L "$target" ]; then       # as a pure file?
       mv "$target" "$target.backup"   # Then back it up
-      echo "-----> Moved your old $target config file to $target.backup"
+      echo "-----> Moved $target config file to $target.backup"
     fi
   fi
 }
@@ -34,6 +34,10 @@ mkdir -p "$ZSH_PLUGINS_DIR" && cd "$ZSH_PLUGINS_DIR"
 if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
   echo "-----> Installing zsh plugin 'zsh-syntax-highlighting'..."
   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+fi
+if [ ! -d "$ZSH_PLUGINS_DIR/zsh-autosuggestions" ]; then
+  echo "-----> Installing zsh plugin 'zsh-autosuggestions'..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions.git
 fi
 cd "$CURRENT_DIR"
 

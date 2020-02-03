@@ -8,6 +8,12 @@
   "git.autofetch": true,
   "workbench.iconTheme": "vscode-icons",
   "cSpell.userWords": ["overscroll"],
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "vue-html": "html",
+    "html": "html",
+    "erb": "html",
+  }
   // Files
   "files.associations": {
     "*.erb": "erb"
