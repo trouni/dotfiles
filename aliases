@@ -7,15 +7,16 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 # Folders
-alias gists='cd $CODE && clear'
+alias gists='$CODE && clear'
 alias gist='gists'
-alias dotfiles='cd $CODE/dotfiles'
-alias livecodes='cd $CODE/teaching/le-wagon/livecodes'
-alias lectures='cd $CODE/teaching/le-wagon/lectures'
+alias dotfiles='$CODE/dotfiles'
+alias livecodes='$CODE/teaching/le-wagon/livecodes'
+alias lectures='$CODE/teaching/le-wagon/lectures'
 
 # Git shortcuts
 alias gcm='git commit -m'
 alias gcom='git checkout master'
+alias gpom='git pull origin master'
 alias gcob='git checkout -b'
 alias gs='git status'
 

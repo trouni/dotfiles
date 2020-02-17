@@ -1,5 +1,5 @@
 # Default code folder
-CODE=$HOME/Dropbox/Code
+CODE=$HOME/Code
 
 # ZSH folder
 ZSH=$HOME/.oh-my-zsh
@@ -52,6 +52,9 @@ pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 # Store your own aliases in the ~/.aliases file and load them here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
+# Log SSL keys
+export SSLKEYLOGFILE=~/.ssl-key.log
+
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -63,3 +66,19 @@ $FG[032]%1~\
 $(git_prompt_info)$(hg_prompt_info) \
 $FG[105]%(!.#.»)%{$reset_color%} '
 export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/trouni/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/trouni/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/trouni/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/trouni/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

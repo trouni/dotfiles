@@ -8,6 +8,20 @@ backup() {
   fi
 }
 
+create_or_update_symlink() {
+  file=$1
+  target=$2
+  if [ ! -L "$target" ]; then
+    echo "-----> Symlinking your new $target"
+    ln -s "$file" "$target"
+  else
+    rm "$target"
+    echo "-----> Removed Symlink: $target"
+    echo "-----> Recreating Symlink for your new $target"
+    ln -s "$file" "$target"
+  fi
+}
+
 #!/bin/zsh
 for name in *; do
   if [ ! -d "$name" ]; then
@@ -15,10 +29,7 @@ for name in *; do
     if [[ ! "$name" =~ '\.sh$' ]] && [ "$name" != 'README.md' ] && [[ ! "$name" =~ '\.sublime-settings$' ]]; then
       backup $target
 
-      if [ ! -e "$target" ]; then
-        echo "-----> Symlinking your new $target"
-        ln -s "$PWD/$name" "$target"
-      fi
+      create_or_update_symlink $PWD/$name $target
     fi
   fi
 done
@@ -50,15 +61,15 @@ fi
 mkdir -p $SUBL_PATH/Packages/User $SUBL_PATH/Installed\ Packages
 backup "$SUBL_PATH/Packages/User/Preferences.sublime-settings"
 curl -k https://sublime.wbond.net/Package%20Control.sublime-package > $SUBL_PATH/Installed\ Packages/Package\ Control.sublime-package
-ln -s $PWD/sublime/Preferences.sublime-settings $SUBL_PATH/Packages/User/Preferences.sublime-settings
-ln -s $PWD/sublime/Package\ Control.sublime-settings $SUBL_PATH/Packages/User/Package\ Control.sublime-settings
-ln -s $PWD/sublime/SublimeLinter.sublime-settings $SUBL_PATH/Packages/User/SublimeLinter.sublime-settings
+create_or_update_symlink $PWD/sublime/Preferences.sublime-settings $SUBL_PATH/Packages/User/Preferences.sublime-settings
+create_or_update_symlink $PWD/sublime/Package\ Control.sublime-settings $SUBL_PATH/Packages/User/Package\ Control.sublime-settings
+create_or_update_symlink $PWD/sublime/SublimeLinter.sublime-settings $SUBL_PATH/Packages/User/SublimeLinter.sublime-settings
 
 # VS Code
 VSCODE_PATH=$HOME/Library/Application\ Support/Code
 mkdir -p $VSCODE_PATH/User
 backup "$VSCODE_PATH/User/settings.json"
-ln -s $PWD/vscode/settings.json $VSCODE_PATH/User/settings.json
+create_or_update_symlink $PWD/vscode/settings.json $VSCODE_PATH/User/settings.json
 
 zsh ~/.zshrc
 
