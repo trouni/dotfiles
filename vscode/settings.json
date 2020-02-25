@@ -26,9 +26,9 @@
   "beautify.language": {
     "html": ["html", "php", "erb"],
     "css": ["css", "scss"],
-    // "js": {
-    //   "type": ["javascript", "json"]
-    // }
+    "js": {
+      "type": ["javascript", "json"]
+    }
   },
   // Git
   "git.suggestSmartCommit": false,
