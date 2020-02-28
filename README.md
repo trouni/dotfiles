@@ -19,6 +19,15 @@ install_or_upgrade "openssl"
 ```zsh
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 cat ~/.ssh/id_ed25519.pub
-ssh-add ~/.ssh/id_ed25519
 ```
 Copy-paste the public SSH key and [add it to GitHub](https://github.com/settings/keys).
+
+Once you started the SSH agent with:
+```zsh
+eval $(ssh-agent)
+```
+Add your private key to it:
+```zsh
+ssh-add -K
+```
+You will be asked for your passphrase once. `-K` will save the key permanently on macOS.
