@@ -46,8 +46,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 
 # Store your own aliases in the ~/.aliases file and load them here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -60,14 +60,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="code -a"
 
-# Prompt
-export PROMPT='$FG[237]${(l.COLUMNS..-.)}%{$reset_color%}
-$FG[032]%1~\
-$(git_prompt_info)$(hg_prompt_info) \
-$FG[105]%(!.#.»)%{$reset_color%} '
-export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
-
-# >>> conda initialize >>>
+# >>> Conda Initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/trouni/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -80,5 +73,13 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
+# <<< Conda Initialize <<<
+
+# >>> Prompt >>>
+export PROMPT='$FG[237]${(l.COLUMNS..-.)}%{$reset_color%}
+$FG[032]%1~\
+$(git_prompt_info)$(hg_prompt_info) \
+$FG[105]%(!.#.»)%{$reset_color%} '
+export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+# <<< Prompt <<<
 

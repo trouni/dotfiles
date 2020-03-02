@@ -13,7 +13,7 @@
     "vue-html": "html",
     "html": "html",
     "erb": "html",
-  }
+  },
   // Files
   "files.associations": {
     "*.erb": "erb"
@@ -21,6 +21,7 @@
   // Formatting
   "[javascript]": {
     // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
   "beautify.language": {
@@ -34,5 +35,17 @@
   "git.suggestSmartCommit": false,
   // Git Project Manager Settings
   "gitProjectManager.baseProjectsFolders": ["/Users/trouni/code/trouni/"],
-  "gitProjectManager.storeRepositoriesBetweenSessions": true
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }
