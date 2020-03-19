@@ -7,7 +7,12 @@
   "sync.autoDownload": true,
   "git.autofetch": true,
   "workbench.iconTheme": "vscode-icons",
-  "cSpell.userWords": ["overscroll"],
+  "cSpell.userWords": [
+    "kesseo",
+    "overscroll",
+    "vuetify",
+    "vuex"
+  ],
   "emmet.includeLanguages": {
     "javascript": "html",
     "vue-html": "html",
@@ -20,9 +25,9 @@
   },
   // Formatting
   "[javascript]": {
-    // "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.defaultFormatter": "vscode.typescript-language-features",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": false
   },
   "beautify.language": {
     "html": ["html", "php", "erb"],
@@ -37,7 +42,7 @@
   "gitProjectManager.baseProjectsFolders": ["/Users/trouni/code/trouni/"],
   "gitProjectManager.storeRepositoriesBetweenSessions": true,
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.formatOnSave": true
   },
   "[json]": {
@@ -47,5 +52,15 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur",
+    "editor.formatOnSave": false
+  },
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ]
 }

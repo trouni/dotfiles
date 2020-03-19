@@ -73,4 +73,6 @@ create_or_update_symlink $PWD/vscode/settings.json $VSCODE_PATH/User/settings.js
 
 zsh ~/.zshrc
 
+# Git
+git config --global core.excludesfile '~/.gitignore_global'
 echo "👌  Carry on with git setup!"
