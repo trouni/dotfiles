@@ -49,6 +49,9 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 
+# Le Wagon Student Picker
+alias whosnext="sh /Users/trouni/Code/student-picker/whosnext.sh"
+
 # Store your own aliases in the ~/.aliases file and load them here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
@@ -83,3 +86,9 @@ $FG[105]%(!.#.»)%{$reset_color%} '
 export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 # <<< Prompt <<<
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/trouni/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/trouni/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/trouni/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/trouni/google-cloud-sdk/completion.zsh.inc'; fi
