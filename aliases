@@ -10,8 +10,8 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias gists='$CODE && clear'
 alias gist='gists'
 alias dotfiles='$CODE/dotfiles'
-alias livecodes='$CODE/teaching/le-wagon/livecodes'
-alias lectures='$CODE/teaching/le-wagon/lectures'
+alias livecodes='$CODE/lewagon/livecodes'
+alias lectures='$CODE/lewagon/lectures'
 
 # Git shortcuts
 alias gcm='git commit -m'
