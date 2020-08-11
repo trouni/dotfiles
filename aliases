@@ -17,6 +17,7 @@ alias lectures='$CODE/lewagon/lectures'
 alias gcm='git commit -m'
 alias gcom='git checkout master'
 alias gpom='git pull origin master'
+alias gpoms='git pull origin master && git sweep'
 alias gcob='git checkout -b'
 alias gs='git status'
 

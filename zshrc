@@ -92,3 +92,8 @@ if [ -f '/Users/trouni/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/trouni/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/trouni/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/trouni/google-cloud-sdk/completion.zsh.inc'; fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+# PYTHONPATH for data-challenges
+export PYTHONPATH="/Users/trouni/Code/lewagon/data-challenges/04-Decision-Science:$PYTHONPATH"

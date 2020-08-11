@@ -1,6 +1,7 @@
 {
   "workbench.colorTheme": "Night Owl (No Italics)",
   "window.zoomLevel": 0,
+  "window.restoreWindows": "none",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "sync.autoUpload": true,
@@ -8,6 +9,8 @@
   "git.autofetch": true,
   "workbench.iconTheme": "vscode-icons",
   "cSpell.userWords": [
+    "Tiet",
+    "Trouni",
     "kesseo",
     "overscroll",
     "vuetify",
@@ -65,5 +68,15 @@
   ],
   "[scss]": {
     "editor.defaultFormatter": "HookyQR.beautify"
-  }
+  },
+  "editor.tabSize": 2,
+  "python.jediEnabled": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"python.languageServer": "Microsoft",
+"[php]": {
+  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+  "editor.formatOnSave": true
+},
 }
