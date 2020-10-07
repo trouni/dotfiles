@@ -7,8 +7,6 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 # Folders
-alias gists='$CODE && clear'
-alias gist='gists'
 alias dotfiles='$CODE/dotfiles'
 alias livecodes='$CODE/lewagon/livecodes'
 alias lectures='$CODE/lewagon/lectures'

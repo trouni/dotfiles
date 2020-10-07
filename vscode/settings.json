@@ -79,4 +79,9 @@
   "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
   "editor.formatOnSave": true
 },
+"[javascriptreact]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"python.dataScience.sendSelectionToInteractiveWindow": false,
+"vsicons.dontShowNewVersionMessage": true,
 }

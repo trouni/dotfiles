@@ -1,5 +1,6 @@
 # Default code folder
 CODE=$HOME/Code
+C=$HOME/Code
 
 # ZSH folder
 ZSH=$HOME/.oh-my-zsh
