@@ -21,4 +21,4 @@ alias gs='git status'
 
 # Python3
 alias python='python3'
-alias jnb='jupyter notebook'
+alias juno='jupyter notebook'
