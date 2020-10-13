@@ -19,6 +19,6 @@ alias gpoms='git pull origin master && git sweep'
 alias gcob='git checkout -b'
 alias gs='git status'
 
-# Python3
-alias python='python3'
+# Data Science
 alias juno='jupyter notebook'
+alias julab='jupyter lab'

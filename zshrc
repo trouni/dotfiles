@@ -1,6 +1,7 @@
 # Default code folder
 CODE=$HOME/Code
 C=$HOME/Code
+DOTFILES=$HOME/Code/dotfiles
 
 # ZSH folder
 ZSH=$HOME/.oh-my-zsh
