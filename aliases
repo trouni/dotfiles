@@ -1,3 +1,6 @@
+# Tools
+alias ducheck='du -sh (.[^.]*|*) | sort -hr'
+
 # Get External IP / local IPs
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -6,19 +9,19 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
-# Folders
-alias dotfiles='$CODE/dotfiles'
-alias livecodes='$CODE/lewagon/livecodes'
-alias lectures='$CODE/lewagon/lectures'
-
 # Git shortcuts
 alias gcm='git commit -m'
-alias gcom='git checkout master'
-alias gpom='git pull origin master'
-alias gpoms='git pull origin master && git sweep'
+alias gcom='git checkout main'
+alias gpom='git pull origin main'
+alias gpoms='git pull origin main && git sweep'
 alias gcob='git checkout -b'
 alias gs='git status'
+
+# Rails
+alias railsclean='rake webpacker:clobber && rake tmp:cache:clear && rake tmp:clear && rake tmp:create && rake tmp:sockets:clear'
 
 # Data Science
 alias juno='jupyter notebook'
 alias julab='jupyter lab'
+
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/trouni/Dropbox/Development/GCP_keys/Wagon_509-0b3f6e7f7ede.json

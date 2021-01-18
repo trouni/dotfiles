@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Night Owl (No Italics)",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "window.restoreWindows": "none",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -8,6 +8,8 @@
   "sync.autoDownload": true,
   "git.autofetch": true,
   "workbench.iconTheme": "vscode-icons",
+  // "editor.hover.enabled": false,
+  "editor.hover.delay": 1000,
   "cSpell.userWords": [
     "tiet",
     "trouni",
@@ -16,27 +18,28 @@
     "vuetify",
     "vuex"
   ],
+  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "html",
     "vue-html": "html",
     "html": "html",
-    "erb": "html",
+    "erb": "html"
   },
   "git.suggestSmartCommit": false,
   "files.associations": {
     "*.erb": "erb"
   },
-  "prettier.disableLanguages": [
-    "html",
-    "liquid"
-  ],
+  "prettier.disableLanguages": ["html", "liquid"],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
-    // "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "editor.defaultFormatter": "sissel.shopify-liquid",
     "editor.formatOnSave": true
   },
   "[json]": {
@@ -64,19 +67,36 @@
   "liquid.format": true,
   "explorer.confirmDragAndDrop": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "eslint.validate": [
-    "javascript",
-    "vue"
-  ],
+  "eslint.validate": ["javascript", "vue"],
   "editor.tabSize": 2,
   "python.languageServer": "Microsoft",
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
   },
-  "python.dataScience.sendSelectionToInteractiveWindow": false,
   "vsicons.dontShowNewVersionMessage": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "terminal.integrated.inheritEnv": false,
+  "editor.minimap.enabled": false,
+  "deepcode.yesWelcomeNotification": false,
+  "deepcode.token": "9c09e1c217f1b42b94ee4c89857a5e45dbe285b8d2fa2f403aa022f9034361d4",
+  "deepcode.uploadApproved": true,
+  "jupyter.sendSelectionToInteractiveWindow": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
 }

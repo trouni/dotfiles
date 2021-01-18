@@ -1,7 +1,10 @@
 # Default code folder
 CODE=$HOME/Code
 C=$HOME/Code
+DOT=$HOME/Code/dotfiles
 DOTFILES=$HOME/Code/dotfiles
+LECTURES=$HOME/Code/lewagon/lectures
+DSLECTURES=$HOME/Code/lewagon/lectures/data-science
 
 # ZSH folder
 ZSH=$HOME/.oh-my-zsh
@@ -10,7 +13,8 @@ ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="zhann"
+# ZSH_THEME="af-magic"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -47,13 +51,6 @@ export NVM_DIR="$HOME/.nvm"
 # Same for `./node_modules/.bin` and nodejs
 export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
-# Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
-# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-# pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
-
-# Le Wagon Student Picker
-alias whosnext="sh /Users/trouni/Code/student-picker/whosnext.sh"
-
 # Store your own aliases in the ~/.aliases file and load them here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
@@ -65,29 +62,13 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="code -a"
 
-# >>> Conda Initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/trouni/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/trouni/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/trouni/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/trouni/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< Conda Initialize <<<
-
 # >>> Prompt >>>
-export PROMPT='$FG[237]${(l.COLUMNS..-.)}%{$reset_color%}
-$FG[032]%1~\
-$(git_prompt_info)$(hg_prompt_info) \
-$FG[105]%(!.#.»)%{$reset_color%} '
-export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+# export PROMPT='$FG[237]${(l.COLUMNS..-.)}%{$reset_color%}
+# $FG[032]%1~\
+# $(git_prompt_info)$(hg_prompt_info) \
+# $FG[105]%(!.#.»)%{$reset_color%} '
+# export PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 # <<< Prompt <<<
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/trouni/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/trouni/google-cloud-sdk/path.zsh.inc'; fi
@@ -97,5 +78,8 @@ if [ -f '/Users/trouni/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tr
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
+# Use iPython for breakpoint()
+export PYTHONBREAKPOINT=IPython.core.debugger.set_trace
+
 # PYTHONPATH for data-challenges
-export PYTHONPATH="/Users/trouni/Code/lewagon/data-challenges/04-Decision-Science:$PYTHONPATH"
+# export PYTHONPATH="/Users/trouni/Code/lewagon/data-challenges-recap/04-Decision-Science:$PYTHONPATH"
