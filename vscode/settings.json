@@ -1,6 +1,5 @@
 {
   "workbench.colorTheme": "Night Owl (No Italics)",
-  "window.zoomLevel": 1,
   "window.restoreWindows": "none",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -27,11 +26,16 @@
   },
   "git.suggestSmartCommit": false,
   "files.associations": {
-    "*.erb": "erb"
+    "html.erb": "erb",
+    "js.erb": "javascript",
   },
   "prettier.disableLanguages": ["html", "liquid"],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop",
     "editor.formatOnSave": false
   },
   "[typescript]": {
@@ -44,6 +48,9 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[erb]": {
     "editor.formatOnSave": true
   },
   "[css]": {
@@ -84,12 +91,7 @@
   "deepcode.token": "9c09e1c217f1b42b94ee4c89857a5e45dbe285b8d2fa2f403aa022f9034361d4",
   "deepcode.uploadApproved": true,
   "jupyter.sendSelectionToInteractiveWindow": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": [],
   "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
@@ -98,5 +100,8 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.multiCursorModifier": "alt",
+  "window.zoomLevel": 1
 }
