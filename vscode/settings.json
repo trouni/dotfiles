@@ -22,7 +22,8 @@
     "javascript": "html",
     "vue-html": "html",
     "html": "html",
-    "erb": "html"
+    "erb": "html",
+    "md": "html"
   },
   "git.suggestSmartCommit": false,
   "files.associations": {
@@ -91,7 +92,12 @@
   "deepcode.token": "9c09e1c217f1b42b94ee4c89857a5e45dbe285b8d2fa2f403aa022f9034361d4",
   "deepcode.uploadApproved": true,
   "jupyter.sendSelectionToInteractiveWindow": false,
-  "workbench.editorAssociations": [],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
@@ -103,5 +109,8 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.multiCursorModifier": "alt",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
 }

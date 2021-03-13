@@ -24,4 +24,6 @@ alias railsclean='rake webpacker:clobber && rake tmp:cache:clear && rake tmp:cle
 alias juno='jupyter notebook'
 alias julab='jupyter lab'
 
-export GOOGLE_APPLICATION_CREDENTIALS=/Users/trouni/Dropbox/Development/GCP_keys/Wagon_509-0b3f6e7f7ede.json
+
+# Docker
+alias docker_pg='docker run --rm --name postgres-docker -e POSTGRES_PASSWORD=password -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres'
